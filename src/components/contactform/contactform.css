@@ -1,0 +1,116 @@
+.contact-form-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #1a1a2e;
+  border-radius: 12px;
+  border: 1px solid #2e2e48;
+}
+
+.contact-form-title {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.contact-form-subtitle {
+  color: #b8b8c8;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contact-form-row .contact-form-field {
+  flex: 1 1 220px;
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form-field label {
+  color: #d8d8e8;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.contact-form-field input,
+.contact-form-field select,
+.contact-form-field textarea {
+  background: #12121f;
+  border: 1px solid #34345a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form-field input:focus,
+.contact-form-field select:focus,
+.contact-form-field textarea:focus {
+  border-color: #6c63ff;
+}
+
+.contact-form-field textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.contact-form-submit {
+  align-self: flex-start;
+  background: #6c63ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.contact-form-submit:hover:not(:disabled) {
+  background: #574fdb;
+  transform: translateY(-1px);
+}
+
+.contact-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-form-status {
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.contact-form-status.success {
+  color: #4ade80;
+}
+
+.contact-form-status.error {
+  color: #f87171;
+}
+
+@media (max-width: 480px) {
+  .contact-form-wrapper {
+    padding: 20px;
+    margin: 24px 16px;
+  }
+}

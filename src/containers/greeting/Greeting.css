@@ -1,0 +1,158 @@
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+/* Main greeting section */
+.greeting-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left and right sides */
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.button-greeting-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* =========================
+   Greeting Text
+   ========================= */
+
+.greeting-text {
+  margin-top: 80px;
+  font-size: 70px;
+  line-height: 1.1;
+  font-family: "Google Sans Bold";
+}
+
+.greeting-nickname {
+  font-size: 30px;
+  line-height: 1;
+  font-family: "Google Sans Bold Italic";
+}
+
+.greeting-text-p {
+  font-size: 40px;
+  line-height: 40px;
+  margin-right: 40px;
+  font-family: "Google Sans Medium";
+}
+
+/* =========================
+   VIDEO
+   ========================= */
+
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Your ML.mp4 */
+.greeting-image-div video {
+  width: 400px;
+  height: 550px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+/* =========================
+   Media Query
+   ========================= */
+
+@media (max-width: 1380px) {
+
+  .greeting-text {
+    font-size: 50px;
+  }
+
+  .greeting-text-p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* Slightly smaller video */
+  .greeting-image-div video {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .button-greeting-div {
+    justify-content: space-around;
+  }
+
+  .greeting-text {
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .greeting-nickname {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .greeting-text-p {
+    font-size: 16px;
+    margin-right: 0;
+    line-height: normal;
+    text-align: center;
+  }
+
+  /* Stack text and video */
+  .greeting-main {
+    display: block;
+  }
+
+  /* Center video */
+  .greeting-image-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  /* Smaller video on mobile */
+  .greeting-image-div video {
+    width: 280px;
+    height: 350px;
+    max-width: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  /* GitHub button */
+  .portfolio-repo-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
