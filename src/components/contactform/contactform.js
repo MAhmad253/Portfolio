@@ -170,13 +170,13 @@ const ContactForm = () => {
 
         {status === "success" && (
           <p className="contact-form-status success">
-            ✅ Thanks! Your message has been sent — I&apos;ll reply within 24
+            Thanks! Your message has been sent — I&apos;ll reply within 24
             hours.
           </p>
         )}
         {status === "error" && (
           <p className="contact-form-status error">
-            ⚠️ Please fill in your name, email, and requirements before
+             Please fill in your name, email, and requirements before
             sending.
           </p>
         )}
