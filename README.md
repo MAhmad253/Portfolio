@@ -2,10 +2,6 @@
 # 🚀 Muhammad Ahmad — AI Engineer & Data Scientist
 
 <p align="center">
-  <img src="./src/assets/images/logo.png" alt="Ahmad's Portfolio" width="120"/>
-</p>
-
-<p align="center">
   <strong>AI Engineer & Data Scientist | LLM Fine-Tuning Specialist</strong>
 </p>
 
